@@ -1,0 +1,26 @@
+PLINK v1.90b6.20 64-bit (21 Sep 2020)
+Options in effect:
+  --out ./cov19_snp/cov19
+  --recode
+  --vcf ./run1/VCF.coronavirus_Wuhan.vcf
+
+Hostname: MIMIA666
+Working directory: D:\xiaomi\github_showcase\covid19_usa_evolution_pattern_project\All\SNP
+Start time: Mon Sep 29 13:18:02 2025
+
+Random number seed: 1759166282
+15731 MB RAM detected; reserving 7865 MB for main workspace.
+--vcf: ./cov19_snp/cov19-temporary.bed + ./cov19_snp/cov19-temporary.bim +
+./cov19_snp/cov19-temporary.fam written.
+2599 variants loaded from .bim file.
+1931 people (0 males, 0 females, 1931 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ./cov19_snp/cov19.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1931 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.991728.
+2599 variants and 1931 people pass filters and QC.
+Note: No phenotypes present.
+--recode ped to ./cov19_snp/cov19.ped + ./cov19_snp/cov19.map ... done.
+
+End time: Mon Sep 29 13:18:02 2025

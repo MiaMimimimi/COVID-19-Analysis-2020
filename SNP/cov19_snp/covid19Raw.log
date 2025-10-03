@@ -1,0 +1,31 @@
+PLINK v1.90b6.20 64-bit (21 Sep 2020)
+Options in effect:
+  --allow-extra-chr
+  --chr-set -1
+  --file ../cov19_snp/covid19edit
+  --out ../cov19_snp/covid19Raw
+  --recode A
+
+Hostname: MIMIA666
+Working directory: D:\xiaomi\github_showcase\covid19_usa_evolution_pattern_project\For_github\SNP\SNP_analysis
+Start time: Thu Oct 02 11:36:46 2025
+
+Random number seed: 1759419406
+15731 MB RAM detected; reserving 7865 MB for main workspace.
+Scanning .ped file... done.
+Performing single-pass .bed write (2599 variants, 1931 samples).
+--file: ../cov19_snp/covid19Raw-temporary.bed +
+../cov19_snp/covid19Raw-temporary.bim + ../cov19_snp/covid19Raw-temporary.fam
+written.
+2599 variants loaded from .bim file.
+1931 samples (0 males, 0 females, 1931 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to ../cov19_snp/covid19Raw.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 1931 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.991728.
+2599 variants and 1931 samples pass filters and QC.
+Note: No phenotypes present.
+--recode A to ../cov19_snp/covid19Raw.raw ... done.
+
+End time: Thu Oct 02 11:36:46 2025

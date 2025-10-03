@@ -1,0 +1,1 @@
+plink/plink.exe --vcf ./run1/VCF.coronavirus_Wuhan.vcf --recode --out ./cov19_snp/cov19 > plink.log  2>&1

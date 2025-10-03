@@ -1,0 +1,1453 @@
+IQ-TREE multicore version 2.0.7 for Linux 64-bit built Apr  1 2024
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    mimia666 (AVX2, FMA3, 15 GB RAM)
+Command: iqtree2 -s ./cov19_aln.clustal -m TEST -B 2000 -alrt 1000 -nt AUTO -pre ./iqtree_output/cov19_tree
+Seed:    670884 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Oct  3 00:26:56 2025
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file ./cov19_aln.clustal ... Clustal format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 664 sequences with 3822 columns, 243 distinct patterns
+37 parsimony-informative, 98 singleton sites, 3687 constant sites
+             Gap/Ambiguity  Composition  p-value
+   1  sample87       0.00%    passed     99.98%
+   2  sample44       0.00%    passed     99.96%
+   3  sample91       0.00%    passed    100.00%
+   4  sample63       0.00%    passed     99.98%
+   5  sample75       0.00%    passed    100.00%
+   6  sample106      0.00%    passed    100.00%
+   7  sample48       0.00%    passed    100.00%
+   8  sample88       0.00%    passed     99.98%
+   9  sample68       0.00%    passed     99.97%
+  10  sample39       0.00%    passed    100.00%
+  11  sample82       0.00%    passed     99.97%
+  12  sample89       0.00%    passed    100.00%
+  13  sample32       0.00%    passed    100.00%
+  14  sample60       0.00%    passed    100.00%
+  15  sample95       0.00%    passed     99.98%
+  16  sample116      0.00%    passed     99.99%
+  17  sample118      0.00%    passed     99.99%
+  18  sample122      0.00%    passed    100.00%
+  19  sample114      0.00%    passed    100.00%
+  20  sample110      0.00%    passed    100.00%
+  21  sample120      0.00%    passed    100.00%
+  22  sample119      0.00%    passed     99.98%
+  23  sample121      0.00%    passed    100.00%
+  24  sample111      0.00%    passed    100.00%
+  25  sample123      0.00%    passed    100.00%
+  26  sample112      0.00%    passed    100.00%
+  27  sample117      0.00%    passed     99.99%
+  28  sample109      0.00%    passed     99.99%
+  29  sample124      0.00%    passed    100.00%
+  30  sample115      0.00%    passed    100.00%
+  31  sample179      0.00%    passed    100.00%
+  32  sample194      0.00%    passed    100.00%
+  33  sample191      0.00%    passed    100.00%
+  34  sample125      0.00%    passed    100.00%
+  35  sample143      0.00%    passed    100.00%
+  36  sample192      0.00%    passed    100.00%
+  37  sample148      0.00%    passed    100.00%
+  38  sample169      0.00%    passed    100.00%
+  39  sample178      0.00%    passed    100.00%
+  40  sample146      0.00%    passed    100.00%
+  41  sample141      0.00%    passed    100.00%
+  42  sample135      0.00%    passed    100.00%
+  43  sample150      0.00%    passed    100.00%
+  44  sample144      0.00%    passed    100.00%
+  45  sample152      0.00%    passed    100.00%
+  46  sample309      0.00%    passed    100.00%
+  47  sample206      0.00%    passed    100.00%
+  48  sample229      0.05%    passed     99.99%
+  49  sample221      0.00%    passed     99.99%
+  50  sample281      0.00%    passed    100.00%
+  51  sample234      0.00%    passed     99.98%
+  52  sample311      0.00%    passed    100.00%
+  53  sample315      0.00%    passed    100.00%
+  54  sample320      0.00%    passed    100.00%
+  55  sample307      0.00%    passed    100.00%
+  56  sample276      0.00%    passed    100.00%
+  57  sample249     33.86%    passed     53.48%
+  58  sample250      0.00%    passed    100.00%
+  59  sample230      0.00%    passed    100.00%
+  60  sample253      0.00%    passed    100.00%
+  61  sample977      0.00%    passed    100.00%
+  62  sample2241     0.00%    passed    100.00%
+  63  sample2603     0.00%    passed    100.00%
+  64  sample2596     0.00%    passed    100.00%
+  65  sample1984     0.00%    passed     99.99%
+  66  sample1291     0.00%    passed    100.00%
+  67  sample3458     0.00%    passed    100.00%
+  68  sample2451     0.00%    passed     99.99%
+  69  sample346      0.00%    passed    100.00%
+  70  sample3574     0.00%    passed    100.00%
+  71  sample1672     0.00%    passed    100.00%
+  72  sample4294     0.00%    passed    100.00%
+  73  sample2945     0.00%    passed    100.00%
+  74  sample879      0.00%    passed    100.00%
+  75  sample1204     0.00%    passed    100.00%
+  76  sample4931     0.00%    passed    100.00%
+  77  sample5010     0.00%    passed    100.00%
+  78  sample4928     0.00%    passed    100.00%
+  79  sample4954     0.00%    passed    100.00%
+  80  sample4961     0.00%    passed    100.00%
+  81  sample4896     0.00%    passed    100.00%
+  82  sample4945     0.00%    passed    100.00%
+  83  sample4995     0.00%    passed     99.99%
+  84  sample4936     0.00%    passed    100.00%
+  85  sample4959     0.00%    passed    100.00%
+  86  sample4960     0.00%    passed    100.00%
+  87  sample4924     0.00%    passed    100.00%
+  88  sample4897     0.00%    passed    100.00%
+  89  sample4892     0.00%    passed     99.99%
+  90  sample4929     0.00%    passed    100.00%
+  91  sample5083     0.00%    passed    100.00%
+  92  sample5239     0.00%    passed    100.00%
+  93  sample5240     0.00%    passed    100.00%
+  94  sample5089     0.00%    passed    100.00%
+  95  sample5139     0.00%    passed    100.00%
+  96  sample5035     0.00%    passed    100.00%
+  97  sample5168     0.00%    passed    100.00%
+  98  sample5235     0.00%    passed    100.00%
+  99  sample5200     0.00%    passed    100.00%
+ 100  sample5227     0.00%    passed    100.00%
+ 101  sample5199     0.00%    passed    100.00%
+ 102  sample5080     0.00%    passed    100.00%
+ 103  sample5256     0.00%    passed    100.00%
+ 104  sample5046     0.05%    passed     99.99%
+ 105  sample5212     0.00%    passed    100.00%
+ 106  sample5336     0.00%    passed     99.99%
+ 107  sample5294     0.00%    passed    100.00%
+ 108  sample5330     0.00%    passed    100.00%
+ 109  sample5301     0.00%    passed    100.00%
+ 110  sample5303     0.00%    passed     99.99%
+ 111  sample5332     0.00%    passed    100.00%
+ 112  sample5282     0.00%    passed    100.00%
+ 113  sample5325     0.00%    passed     99.99%
+ 114  sample105      0.00%    passed    100.00%
+ 115  sample5312     0.00%    passed    100.00%
+ 116  sample5331     0.00%    passed     99.99%
+ 117  sample5324     0.00%    passed    100.00%
+ 118  sample5292     0.00%    passed    100.00%
+ 119  sample5327     0.00%    passed    100.00%
+ 120  sample5323     0.00%    passed    100.00%
+ 121  sample5539     0.00%    passed    100.00%
+ 122  sample6494     0.00%    passed    100.00%
+ 123  sample5992     0.00%    passed    100.00%
+ 124  sample6258     0.00%    passed    100.00%
+ 125  sample5834     0.00%    passed     99.99%
+ 126  sample6282     0.00%    passed    100.00%
+ 127  sample5354     0.00%    passed     99.99%
+ 128  sample6007     0.00%    passed    100.00%
+ 129  sample6399     0.00%    passed    100.00%
+ 130  sample5728     0.00%    passed    100.00%
+ 131  sample5674     0.00%    passed    100.00%
+ 132  sample5689     0.00%    passed    100.00%
+ 133  sample5426    22.58%    passed     54.73%
+ 134  sample6533     0.00%    passed    100.00%
+ 135  sample6052     0.00%    passed    100.00%
+ 136  sample6586     0.00%    passed    100.00%
+ 137  sample6657     0.00%    passed    100.00%
+ 138  sample6656     0.00%    passed    100.00%
+ 139  sample6650     0.00%    passed    100.00%
+ 140  sample6590     0.03%    passed    100.00%
+ 141  sample6632     0.00%    passed    100.00%
+ 142  sample6612     0.00%    passed     99.99%
+ 143  sample6651     0.00%    passed    100.00%
+ 144  sample6706     0.00%    passed     99.99%
+ 145  sample6673     0.00%    passed    100.00%
+ 146  sample6677     0.00%    passed    100.00%
+ 147  sample6595     0.00%    passed    100.00%
+ 148  sample6685     0.00%    passed     99.99%
+ 149  sample6616     0.00%    passed    100.00%
+ 150  sample6684     0.00%    passed     99.99%
+ 151  sample6707     0.00%    passed    100.00%
+ 152  sample6708     0.00%    passed    100.00%
+ 153  sample6709     0.00%    passed    100.00%
+ 154  sample6710     0.00%    passed    100.00%
+ 155  sample6711     0.00%    passed    100.00%
+ 156  sample6712     0.00%    passed    100.00%
+ 157  sample6713     0.00%    passed     99.99%
+ 158  sample6714     0.00%    passed     99.99%
+ 159  sample6715     0.00%    passed     99.99%
+ 160  sample6716     0.00%    passed    100.00%
+ 161  sample6724     0.00%    passed     99.99%
+ 162  sample6743    26.98%    passed     70.98%
+ 163  sample6720     0.00%    passed    100.00%
+ 164  sample6778     0.00%    passed    100.00%
+ 165  sample6756     0.00%    passed    100.00%
+ 166  sample6753     0.00%    passed    100.00%
+ 167  sample6772     0.00%    passed    100.00%
+ 168  sample6722     0.00%    passed    100.00%
+ 169  sample6764     0.39%    passed     99.77%
+ 170  sample6757     0.00%    passed    100.00%
+ 171  sample6761     6.41%    passed     89.73%
+ 172  sample6728     0.00%    passed    100.00%
+ 173  sample6777     0.00%    passed    100.00%
+ 174  sample6780     0.00%    passed    100.00%
+ 175  sample6725     0.00%    passed    100.00%
+ 176  sample6921     0.00%    passed    100.00%
+ 177  sample6862     0.00%    passed    100.00%
+ 178  sample6888     0.00%    passed    100.00%
+ 179  sample6841     0.00%    passed    100.00%
+ 180  sample6838     0.00%    passed     99.99%
+ 181  sample6794     0.00%    passed    100.00%
+ 182  sample6901     0.00%    passed    100.00%
+ 183  sample6825     0.00%    passed    100.00%
+ 184  sample6933     0.00%    passed    100.00%
+ 185  sample6831     0.00%    passed    100.00%
+ 186  sample6945     0.00%    passed    100.00%
+ 187  sample6906     0.00%    passed    100.00%
+ 188  sample6897     0.00%    passed    100.00%
+ 189  sample6930     0.00%    passed    100.00%
+ 190  sample6805     0.00%    passed    100.00%
+ 191  sample7272     0.00%    passed     99.99%
+ 192  sample7016    26.98%    passed     73.52%
+ 193  sample7267     0.00%    passed    100.00%
+ 194  sample7258     0.05%    passed     99.98%
+ 195  sample6997    26.98%    passed     70.98%
+ 196  sample7114     0.00%    passed    100.00%
+ 197  sample7193     0.00%    passed    100.00%
+ 198  sample7179     0.05%    passed    100.00%
+ 199  sample7175     0.05%    passed    100.00%
+ 200  sample7029     0.00%    passed    100.00%
+ 201  sample7039     0.00%    passed     99.99%
+ 202  sample7156     0.00%    passed    100.00%
+ 203  sample7000     0.00%    passed    100.00%
+ 204  sample7172     0.05%    passed    100.00%
+ 205  sample7211     0.00%    passed    100.00%
+ 206  sample7289     0.00%    passed    100.00%
+ 207  sample7297     0.00%    passed    100.00%
+ 208  sample7300     0.00%    passed    100.00%
+ 209  sample7305     0.00%    passed    100.00%
+ 210  sample7292     0.00%    passed    100.00%
+ 211  sample7299     0.00%    passed    100.00%
+ 212  sample7301     0.00%    passed    100.00%
+ 213  sample7288     0.00%    passed    100.00%
+ 214  sample7294     0.00%    passed    100.00%
+ 215  sample7282     0.00%    passed    100.00%
+ 216  sample7284     0.00%    passed    100.00%
+ 217  sample7278     0.00%    passed    100.00%
+ 218  sample7296     0.00%    passed    100.00%
+ 219  sample7276     0.47%    passed     99.68%
+ 220  sample7291     0.00%    passed    100.00%
+ 221  sample7307     0.00%    passed    100.00%
+ 222  sample7308     0.03%    passed    100.00%
+ 223  sample7309     0.00%    passed    100.00%
+ 224  sample7310     0.00%    passed    100.00%
+ 225  sample7311     0.00%    passed    100.00%
+ 226  sample7312     0.00%    passed    100.00%
+ 227  sample7313     0.00%    passed    100.00%
+ 228  sample7314     0.00%    passed    100.00%
+ 229  sample7874     0.00%    passed    100.00%
+ 230  sample8452     0.00%    passed    100.00%
+ 231  sample7378     0.00%    passed    100.00%
+ 232  sample7426     0.00%    passed     99.99%
+ 233  sample7393     0.03%    passed    100.00%
+ 234  sample8054     0.00%    passed    100.00%
+ 235  sample7959     0.00%    passed    100.00%
+ 236  sample7410     0.03%    passed    100.00%
+ 237  sample8311     0.00%    passed    100.00%
+ 238  sample7936     0.00%    passed    100.00%
+ 239  sample7357     0.00%    passed    100.00%
+ 240  sample7419     0.03%    passed    100.00%
+ 241  sample7809     0.00%    passed    100.00%
+ 242  sample8051     0.00%    passed    100.00%
+ 243  sample8417     0.00%    passed    100.00%
+ 244  sample8722     0.00%    passed    100.00%
+ 245  sample8645     0.00%    passed    100.00%
+ 246  sample8807     0.00%    passed    100.00%
+ 247  sample8506     0.00%    passed    100.00%
+ 248  sample8843     0.00%    passed     99.99%
+ 249  sample8511     0.00%    passed    100.00%
+ 250  sample8799     0.13%    passed     99.95%
+ 251  sample8867     0.00%    passed    100.00%
+ 252  sample8521     0.00%    passed    100.00%
+ 253  sample8677     0.00%    passed    100.00%
+ 254  sample8608     0.00%    passed    100.00%
+ 255  sample8590     0.00%    passed     99.99%
+ 256  sample8528     0.00%    passed    100.00%
+ 257  sample8489     0.00%    passed    100.00%
+ 258  sample8642     0.00%    passed     99.99%
+ 259  sample9159     0.00%    passed    100.00%
+ 260  sample8912     0.05%    passed    100.00%
+ 261  sample8910     0.00%    passed    100.00%
+ 262  sample9184    27.03%    passed     70.11%
+ 263  sample9039     0.00%    passed     99.97%
+ 264  sample9268     0.00%    passed    100.00%
+ 265  sample9288     0.00%    passed    100.00%
+ 266  sample9028     0.00%    passed    100.00%
+ 267  sample8961     0.00%    passed     99.99%
+ 268  sample8976     0.00%    passed    100.00%
+ 269  sample9178    27.03%    passed     70.11%
+ 270  sample9285     0.00%    passed    100.00%
+ 271  sample9226     0.00%    passed    100.00%
+ 272  sample9078     0.00%    passed    100.00%
+ 273  sample9136     0.00%    passed    100.00%
+ 274  sample9374     0.00%    passed    100.00%
+ 275  sample9375     0.00%    passed    100.00%
+ 276  sample9301     0.00%    passed    100.00%
+ 277  sample9380     0.00%    passed    100.00%
+ 278  sample9344     0.00%    passed    100.00%
+ 279  sample9349     0.00%    passed     99.99%
+ 280  sample9369     0.00%    passed     99.99%
+ 281  sample9396     0.00%    passed    100.00%
+ 282  sample9343     0.00%    passed    100.00%
+ 283  sample9366     0.00%    passed    100.00%
+ 284  sample9309     0.00%    passed     99.99%
+ 285  sample9306     0.00%    passed    100.00%
+ 286  sample9360    25.07%    passed     65.29%
+ 287  sample9336     0.00%    passed    100.00%
+ 288  sample9340     0.00%    passed    100.00%
+ 289  sample11180    0.00%    passed     99.97%
+ 290  sample10056    0.00%    passed    100.00%
+ 291  sample9953     0.00%    passed    100.00%
+ 292  sample10390    0.00%    passed    100.00%
+ 293  sample9470     0.00%    passed    100.00%
+ 294  sample10643    0.08%    passed     99.96%
+ 295  sample10323    0.00%    passed     99.99%
+ 296  sample9636    26.98%    passed     70.98%
+ 297  sample10365    0.00%    passed    100.00%
+ 298  sample10748    0.00%    passed    100.00%
+ 299  sample9709     0.00%    passed    100.00%
+ 300  sample10762   26.48%    passed     69.04%
+ 301  sample9751     0.00%    passed    100.00%
+ 302  sample10723    0.00%    passed    100.00%
+ 303  sample10853    0.00%    passed    100.00%
+ 304  sample12250    0.00%    passed     99.99%
+ 305  sample12081    0.00%    passed     99.99%
+ 306  sample12019    0.00%    passed     99.95%
+ 307  sample12054    0.00%    passed    100.00%
+ 308  sample12533    0.00%    passed    100.00%
+ 309  sample12588    0.00%    passed    100.00%
+ 310  sample12513    0.00%    passed    100.00%
+ 311  sample12683    0.00%    passed    100.00%
+ 312  sample12038    0.00%    passed    100.00%
+ 313  sample11525    0.00%    passed    100.00%
+ 314  sample12821    0.00%    passed    100.00%
+ 315  sample12357    0.03%    passed    100.00%
+ 316  sample11699    0.00%    passed    100.00%
+ 317  sample11514    0.00%    passed     99.98%
+ 318  sample12865    0.00%    passed     99.99%
+ 319  sample12906    0.00%    passed    100.00%
+ 320  sample12941    0.00%    passed    100.00%
+ 321  sample12918    0.00%    passed    100.00%
+ 322  sample12927    0.00%    passed    100.00%
+ 323  sample12925    0.00%    passed    100.00%
+ 324  sample12923    0.00%    passed    100.00%
+ 325  sample12958    0.00%    passed     99.98%
+ 326  sample12943    0.00%    passed    100.00%
+ 327  sample12935    0.00%    passed    100.00%
+ 328  sample12933    0.00%    passed    100.00%
+ 329  sample12939    0.00%    passed    100.00%
+ 330  sample12926    0.00%    passed    100.00%
+ 331  sample12951    0.00%    passed    100.00%
+ 332  sample12938    0.00%    passed    100.00%
+ 333  sample12921    0.00%    passed     99.99%
+ 334  sample12988    0.00%    passed    100.00%
+ 335  sample12997    0.00%    passed     99.96%
+ 336  sample12986    0.00%    passed    100.00%
+ 337  sample13001    0.00%    passed    100.00%
+ 338  sample13000    0.00%    passed     99.97%
+ 339  sample12961    0.26%    passed     99.99%
+ 340  sample12994    0.00%    passed    100.00%
+ 341  sample12989    0.00%    passed     99.99%
+ 342  sample12964    0.00%    passed    100.00%
+ 343  sample12981    0.00%    passed     99.99%
+ 344  sample12965    0.00%    passed    100.00%
+ 345  sample13003    0.00%    passed    100.00%
+ 346  sample12968    0.00%    passed    100.00%
+ 347  sample12998    0.00%    passed    100.00%
+ 348  sample12975    0.00%    passed     99.99%
+ 349  sample13004    0.00%    passed    100.00%
+ 350  sample13005    0.00%    passed    100.00%
+ 351  sample13006    0.00%    passed    100.00%
+ 352  sample13007    0.00%    passed     99.99%
+ 353  sample13047    0.00%    passed    100.00%
+ 354  sample13058    0.00%    passed     99.96%
+ 355  sample13056    0.00%    passed     99.97%
+ 356  sample13026    0.00%    passed     99.99%
+ 357  sample13044    0.00%    passed    100.00%
+ 358  sample13033    0.00%    passed    100.00%
+ 359  sample13066    0.00%    passed     99.97%
+ 360  sample13089    0.00%    passed    100.00%
+ 361  sample13078    0.00%    passed    100.00%
+ 362  sample13019    0.00%    passed    100.00%
+ 363  sample13032    0.00%    passed     99.99%
+ 364  sample13008    0.00%    passed    100.00%
+ 365  sample13075    0.00%    passed    100.00%
+ 366  sample13016    0.00%    passed    100.00%
+ 367  sample13025    0.00%    passed    100.00%
+ 368  sample13136    0.00%    passed    100.00%
+ 369  sample13113   26.98%    passed     70.33%
+ 370  sample13102    0.03%    passed     99.99%
+ 371  sample13111    0.00%    passed    100.00%
+ 372  sample13108    0.00%    passed    100.00%
+ 373  sample13123    0.00%    passed    100.00%
+ 374  sample13137    0.00%    passed    100.00%
+ 375  sample13146    0.00%    passed    100.00%
+ 376  sample13114    0.00%    passed    100.00%
+ 377  sample13133    0.00%    passed    100.00%
+ 378  sample13147   26.98%    passed     70.98%
+ 379  sample13117    0.00%    passed    100.00%
+ 380  sample13095    0.00%    passed    100.00%
+ 381  sample13131    0.00%    passed    100.00%
+ 382  sample13104   26.98%    passed     70.98%
+ 383  sample13152    0.00%    passed    100.00%
+ 384  sample13153    0.00%    passed    100.00%
+ 385  sample13154    0.00%    passed    100.00%
+ 386  sample13155    0.00%    passed    100.00%
+ 387  sample13156    0.00%    passed    100.00%
+ 388  sample13175    0.00%    passed    100.00%
+ 389  sample13209    0.00%    passed     99.99%
+ 390  sample13204    0.00%    passed    100.00%
+ 391  sample13180    0.00%    passed    100.00%
+ 392  sample13213    0.00%    passed    100.00%
+ 393  sample13196    0.00%    passed    100.00%
+ 394  sample13176    0.00%    passed    100.00%
+ 395  sample13240    0.00%    passed    100.00%
+ 396  sample13159    0.00%    passed    100.00%
+ 397  sample13199    0.00%    passed    100.00%
+ 398  sample13167    0.00%    passed    100.00%
+ 399  sample13223    0.00%    passed    100.00%
+ 400  sample13174    0.00%    passed    100.00%
+ 401  sample13166    0.00%    passed     99.99%
+ 402  sample13198    0.00%    passed    100.00%
+ 403  sample13336    0.00%    passed    100.00%
+ 404  sample13467    0.00%    passed     99.98%
+ 405  sample13463    0.00%    passed    100.00%
+ 406  sample13570    0.00%    passed     99.99%
+ 407  sample13310    0.00%    passed     99.99%
+ 408  sample13583    0.00%    passed    100.00%
+ 409  sample13530    0.00%    passed     99.98%
+ 410  sample13612    0.00%    passed    100.00%
+ 411  sample13462    0.00%    passed    100.00%
+ 412  sample13411    0.00%    passed     99.99%
+ 413  sample13553    0.00%    passed     99.98%
+ 414  sample13539    0.00%    passed     99.99%
+ 415  sample13367    0.00%    passed    100.00%
+ 416  sample13356    0.00%    passed    100.00%
+ 417  sample13299    0.00%    passed    100.00%
+ 418  sample13775    0.00%    passed    100.00%
+ 419  sample13679    0.00%    passed     99.99%
+ 420  sample13807    0.00%    passed    100.00%
+ 421  sample13811    0.00%    passed    100.00%
+ 422  sample13734    0.00%    passed     99.99%
+ 423  sample13651    0.00%    passed    100.00%
+ 424  sample13710    0.00%    passed    100.00%
+ 425  sample13751    6.33%    passed     93.46%
+ 426  sample13784    0.00%    passed    100.00%
+ 427  sample13801    0.00%    passed    100.00%
+ 428  sample13771    0.00%    passed    100.00%
+ 429  sample13656    0.00%    passed    100.00%
+ 430  sample13805   26.98%    passed     70.98%
+ 431  sample13782    0.00%    passed    100.00%
+ 432  sample13707    0.00%    passed    100.00%
+ 433  sample14205    0.00%    passed    100.00%
+ 434  sample16094    0.00%    passed    100.00%
+ 435  sample15182    0.00%    passed    100.00%
+ 436  sample16189    0.00%    passed     99.99%
+ 437  sample15594    0.00%    passed    100.00%
+ 438  sample15948    0.00%    passed    100.00%
+ 439  sample13874    0.00%    passed    100.00%
+ 440  sample15090    0.00%    passed    100.00%
+ 441  sample14358    0.00%    passed    100.00%
+ 442  sample13846    0.00%    passed    100.00%
+ 443  sample14785    0.00%    passed    100.00%
+ 444  sample16221    0.00%    passed    100.00%
+ 445  sample15590    0.00%    passed    100.00%
+ 446  sample14176    0.00%    passed    100.00%
+ 447  sample14031    0.00%    passed    100.00%
+ 448  sample16306    0.00%    passed     99.99%
+ 449  sample16315    0.00%    passed    100.00%
+ 450  sample16316    0.00%    passed    100.00%
+ 451  sample16308    0.00%    passed     99.99%
+ 452  sample16314    0.00%    passed    100.00%
+ 453  sample16305    0.00%    passed    100.00%
+ 454  sample16321    0.00%    passed    100.00%
+ 455  sample16302    0.00%    passed    100.00%
+ 456  sample16320    0.00%    passed    100.00%
+ 457  sample16319    0.00%    passed    100.00%
+ 458  sample16307    0.00%    passed    100.00%
+ 459  sample16312    0.00%    passed    100.00%
+ 460  sample16303    0.00%    passed    100.00%
+ 461  sample16304    0.00%    passed    100.00%
+ 462  sample16311    0.00%    passed    100.00%
+ 463  sample16322    0.00%    passed    100.00%
+ 464  sample16323    0.00%    passed    100.00%
+ 465  sample16324    0.50%    passed    100.00%
+ 466  sample16325    0.05%    passed    100.00%
+ 467  sample16326    0.05%    passed    100.00%
+ 468  sample16327    0.05%    passed    100.00%
+ 469  sample16328    0.00%    passed    100.00%
+ 470  sample16329    0.00%    passed    100.00%
+ 471  sample16330    0.00%    passed    100.00%
+ 472  sample16331    0.00%    passed    100.00%
+ 473  sample16332    0.00%    passed    100.00%
+ 474  sample16333    0.00%    passed    100.00%
+ 475  sample16334    0.00%    passed    100.00%
+ 476  sample16553    0.00%    passed    100.00%
+ 477  sample16446    0.00%    passed     99.98%
+ 478  sample16557    0.99%    passed     99.95%
+ 479  sample16635    0.00%    passed    100.00%
+ 480  sample16632    0.00%    passed    100.00%
+ 481  sample16769    0.00%    passed    100.00%
+ 482  sample16362    0.00%    passed    100.00%
+ 483  sample16833    0.00%    passed     99.99%
+ 484  sample16670    0.00%    passed    100.00%
+ 485  sample16533    0.00%    passed    100.00%
+ 486  sample16852    0.00%    passed    100.00%
+ 487  sample16783    0.00%    passed    100.00%
+ 488  sample16398    0.00%    passed    100.00%
+ 489  sample16649    0.00%    passed    100.00%
+ 490  sample16534    0.00%    passed     99.99%
+ 491  sample17026    0.00%    passed    100.00%
+ 492  sample16960    0.00%    passed    100.00%
+ 493  sample17038    0.00%    passed    100.00%
+ 494  sample17061    0.00%    passed    100.00%
+ 495  sample17027    0.00%    passed    100.00%
+ 496  sample16969    0.00%    passed    100.00%
+ 497  sample17020    0.00%    passed    100.00%
+ 498  sample16971    0.00%    passed    100.00%
+ 499  sample16978    0.00%    passed     99.99%
+ 500  sample16977    0.00%    passed    100.00%
+ 501  sample17040    0.00%    passed    100.00%
+ 502  sample16966    0.00%    passed    100.00%
+ 503  sample16936    0.00%    passed    100.00%
+ 504  sample17055    0.00%    passed    100.00%
+ 505  sample16974    0.00%    passed    100.00%
+ 506  sample17092    0.00%    passed    100.00%
+ 507  sample17094    0.00%    passed    100.00%
+ 508  sample17103    0.03%    passed    100.00%
+ 509  sample17104    0.00%    passed    100.00%
+ 510  sample17080    0.00%    passed    100.00%
+ 511  sample17101    0.00%    passed    100.00%
+ 512  sample17082    0.00%    passed     99.95%
+ 513  sample17095    0.03%    passed    100.00%
+ 514  sample17102    0.00%    passed    100.00%
+ 515  sample17083    0.00%    passed     99.99%
+ 516  sample17085    0.00%    passed    100.00%
+ 517  sample17088    0.00%    passed    100.00%
+ 518  sample17091    0.00%    passed    100.00%
+ 519  sample17071    0.00%    passed    100.00%
+ 520  sample17072    0.00%    passed    100.00%
+ 521  sample17105    0.00%    passed    100.00%
+ 522  sample17106    0.00%    passed    100.00%
+ 523  sample17107    0.00%    passed    100.00%
+ 524  sample17108    0.00%    passed    100.00%
+ 525  sample17109    0.00%    passed    100.00%
+ 526  sample17110    0.00%    passed     99.99%
+ 527  sample17111    0.00%    passed    100.00%
+ 528  sample17229    0.00%    passed    100.00%
+ 529  sample17285    0.00%    passed    100.00%
+ 530  sample17131    0.00%    passed    100.00%
+ 531  sample17183    0.00%    passed    100.00%
+ 532  sample17188    0.00%    passed     99.99%
+ 533  sample17272    0.00%    passed     99.99%
+ 534  sample17149    0.00%    passed    100.00%
+ 535  sample17283    0.00%    passed    100.00%
+ 536  sample17141    0.00%    passed    100.00%
+ 537  sample17246    0.00%    passed    100.00%
+ 538  sample17113    0.00%    passed     99.99%
+ 539  sample17168    0.00%    passed    100.00%
+ 540  sample17187    0.00%    passed    100.00%
+ 541  sample17238    0.00%    passed    100.00%
+ 542  sample17237    0.00%    passed    100.00%
+ 543  sample17315    0.00%    passed     99.99%
+ 544  sample17317    0.00%    passed    100.00%
+ 545  sample17303    0.00%    passed    100.00%
+ 546  sample17307    0.00%    passed     99.96%
+ 547  sample17314    0.00%    passed     99.99%
+ 548  sample17316    0.00%    passed    100.00%
+ 549  sample17306    0.00%    passed    100.00%
+ 550  sample17311    0.00%    passed    100.00%
+ 551  sample17308    0.00%    passed     99.96%
+ 552  sample17304    0.10%    passed    100.00%
+ 553  sample17309    0.00%    passed     99.99%
+ 554  sample17318    0.00%    passed     99.99%
+ 555  sample17305    0.00%    passed    100.00%
+ 556  sample17310    0.00%    passed     99.98%
+ 557  sample17313    0.00%    passed    100.00%
+ 558  sample17319    0.00%    passed    100.00%
+ 559  sample17320    0.00%    passed    100.00%
+ 560  sample17321    0.00%    passed    100.00%
+ 561  sample17322    0.00%    passed    100.00%
+ 562  sample17323    0.00%    passed    100.00%
+ 563  sample17324    0.00%    passed    100.00%
+ 564  sample17325    0.00%    passed    100.00%
+ 565  sample17326    0.00%    passed    100.00%
+ 566  sample17327    0.00%    passed    100.00%
+ 567  sample17328    0.00%    passed    100.00%
+ 568  sample17329    0.00%    passed     99.99%
+ 569  sample19029    0.00%    passed    100.00%
+ 570  sample19999   26.98%    passed     70.98%
+ 571  sample19270    1.81%    passed     99.24%
+ 572  sample18972    0.03%    passed    100.00%
+ 573  sample18094    0.00%    passed    100.00%
+ 574  sample17818   26.98%    passed     70.98%
+ 575  sample17664    0.00%    passed    100.00%
+ 576  sample18933    0.00%    passed    100.00%
+ 577  sample21143   26.98%    passed     73.01%
+ 578  sample18810    0.00%    passed    100.00%
+ 579  sample17432    0.00%    passed    100.00%
+ 580  sample18375    0.00%    passed     99.99%
+ 581  sample21270    0.00%    passed    100.00%
+ 582  sample20084    0.00%    passed    100.00%
+ 583  sample19630    0.00%    passed    100.00%
+ 584  sample22837    0.00%    passed    100.00%
+ 585  sample22270    0.00%    passed    100.00%
+ 586  sample22686    0.00%    passed    100.00%
+ 587  sample21472    0.00%    passed    100.00%
+ 588  sample22974    0.00%    passed    100.00%
+ 589  sample22759    0.00%    passed    100.00%
+ 590  sample21982    0.00%    passed    100.00%
+ 591  sample22034    0.00%    passed     99.99%
+ 592  sample22784    0.00%    passed    100.00%
+ 593  sample23196    0.00%    passed    100.00%
+ 594  sample22664    0.00%    passed     99.99%
+ 595  sample23155    0.00%    passed    100.00%
+ 596  sample21904    0.00%    passed     99.99%
+ 597  sample22354    0.00%    passed    100.00%
+ 598  sample22492    0.00%    passed    100.00%
+ 599  sample23434    0.00%    passed     99.99%
+ 600  sample23490    0.00%    passed    100.00%
+ 601  sample23394    0.00%    passed    100.00%
+ 602  sample23282    0.00%    passed    100.00%
+ 603  sample24300    0.00%    passed    100.00%
+ 604  sample23422    0.00%    passed    100.00%
+ 605  sample23318    0.00%    passed     99.99%
+ 606  sample23575    0.00%    passed    100.00%
+ 607  sample24534    0.00%    passed    100.00%
+ 608  sample24075    0.00%    passed    100.00%
+ 609  sample24215    0.00%    passed     99.99%
+ 610  sample23496    0.00%    passed    100.00%
+ 611  sample23551    0.00%    passed     99.99%
+ 612  sample23376    0.00%    passed    100.00%
+ 613  sample23366    0.00%    passed     99.99%
+ 614  sample24619    0.00%    passed    100.00%
+ 615  sample24620    0.00%    passed    100.00%
+ 616  sample24621    0.00%    passed    100.00%
+ 617  sample24622    0.00%    passed    100.00%
+ 618  sample24937    0.00%    passed    100.00%
+ 619  sample24699    0.00%    passed    100.00%
+ 620  sample24878    0.00%    passed    100.00%
+ 621  sample28092    0.00%    passed    100.00%
+ 622  sample29325    0.00%    passed    100.00%
+ 623  sample25918    0.00%    passed    100.00%
+ 624  sample28673    0.00%    passed    100.00%
+ 625  sample27640    0.00%    passed    100.00%
+ 626  sample25090    0.00%    passed    100.00%
+ 627  sample28023    1.54%    passed     99.06%
+ 628  sample28580    0.00%    passed    100.00%
+ 629  sample28339    0.00%    passed     99.99%
+ 630  sample24921    0.00%    passed    100.00%
+ 631  sample26198    0.00%    passed    100.00%
+ 632  sample27678    0.00%    passed    100.00%
+ 633  sample30449    0.05%    passed     99.99%
+ 634  sample31221    0.03%    passed    100.00%
+ 635  sample31868    0.00%    passed    100.00%
+ 636  sample30466    0.00%    passed    100.00%
+ 637  sample30166    0.00%    passed    100.00%
+ 638  sample31967    0.00%    passed     99.99%
+ 639  sample31061    0.00%    passed    100.00%
+ 640  sample31760   26.98%    passed     70.98%
+ 641  sample29849    0.00%    passed    100.00%
+ 642  sample29715    0.00%    passed    100.00%
+ 643  sample30754    0.00%    passed     99.99%
+ 644  sample29952    0.05%    passed     99.98%
+ 645  sample29701    0.05%    passed     99.97%
+ 646  sample31309    0.00%    passed    100.00%
+ 647  sample29866    0.03%    passed    100.00%
+ 648  sample32081    0.00%    passed    100.00%
+ 649  sample32082    0.00%    passed    100.00%
+ 650  sample32143    0.00%    passed    100.00%
+ 651  sample32151    0.00%    passed    100.00%
+ 652  sample32092    0.00%    passed     99.99%
+ 653  sample32133    0.00%    passed    100.00%
+ 654  sample32108    0.00%    passed    100.00%
+ 655  sample32093    0.00%    passed    100.00%
+ 656  sample32154    0.00%    passed    100.00%
+ 657  sample32104    0.00%    passed    100.00%
+ 658  sample32112    0.00%    passed    100.00%
+ 659  sample32109    0.00%    passed    100.00%
+ 660  sample32091    0.00%    passed    100.00%
+ 661  sample32099    0.00%    passed    100.00%
+ 662  sample32150    0.00%    passed    100.00%
+ 663  sample32115    0.00%    passed    100.00%
+ 664  sample32137    0.00%    passed    100.00%
+****  TOTAL          0.76%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: sample75 is identical to sample91 but kept for subsequent analysis
+NOTE: sample88 is identical to sample63 but kept for subsequent analysis
+NOTE: sample82 is identical to sample68 but kept for subsequent analysis
+NOTE: sample117 is identical to sample116 but kept for subsequent analysis
+NOTE: sample206 is identical to sample192 but kept for subsequent analysis
+NOTE: sample17329 is identical to sample221 but kept for subsequent analysis
+NOTE: sample4294 is identical to sample2603 but kept for subsequent analysis
+NOTE: sample17102 is identical to sample346 but kept for subsequent analysis
+NOTE: sample4892 is identical to sample4995 but kept for subsequent analysis
+NOTE: sample5325 is identical to sample5303 but kept for subsequent analysis
+NOTE: sample17072 is identical to sample6494 but kept for subsequent analysis
+NOTE: sample6997 is identical to sample6743 but kept for subsequent analysis
+NOTE: sample7175 is identical to sample7179 but kept for subsequent analysis
+NOTE: sample7410 is identical to sample7393 but kept for subsequent analysis
+NOTE: sample9178 is identical to sample9184 but kept for subsequent analysis
+NOTE: sample9369 is identical to sample9349 but kept for subsequent analysis
+NOTE: sample13066 is identical to sample13056 but kept for subsequent analysis
+NOTE: sample13131 is identical to sample13133 but kept for subsequent analysis
+NOTE: sample13553 is identical to sample13530 but kept for subsequent analysis
+NOTE: sample24878 is identical to sample13299 but kept for subsequent analysis
+NOTE: sample17095 is identical to sample17103 but kept for subsequent analysis
+NOTE: sample17308 is identical to sample17307 but kept for subsequent analysis
+NOTE: sample17432 is identical to sample17664 but kept for subsequent analysis
+NOTE: 489 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: sample106 (identical to sample91) is ignored but added at the end
+NOTE: sample39 (identical to sample91) is ignored but added at the end
+NOTE: sample89 (identical to sample91) is ignored but added at the end
+NOTE: sample32 (identical to sample91) is ignored but added at the end
+NOTE: sample60 (identical to sample91) is ignored but added at the end
+NOTE: sample122 (identical to sample91) is ignored but added at the end
+NOTE: sample114 (identical to sample91) is ignored but added at the end
+NOTE: sample110 (identical to sample91) is ignored but added at the end
+NOTE: sample120 (identical to sample91) is ignored but added at the end
+NOTE: sample121 (identical to sample91) is ignored but added at the end
+NOTE: sample111 (identical to sample91) is ignored but added at the end
+NOTE: sample123 (identical to sample91) is ignored but added at the end
+NOTE: sample112 (identical to sample91) is ignored but added at the end
+NOTE: sample124 (identical to sample91) is ignored but added at the end
+NOTE: sample115 (identical to sample91) is ignored but added at the end
+NOTE: sample179 (identical to sample91) is ignored but added at the end
+NOTE: sample194 (identical to sample91) is ignored but added at the end
+NOTE: sample191 (identical to sample91) is ignored but added at the end
+NOTE: sample125 (identical to sample91) is ignored but added at the end
+NOTE: sample143 (identical to sample91) is ignored but added at the end
+NOTE: sample148 (identical to sample91) is ignored but added at the end
+NOTE: sample169 (identical to sample91) is ignored but added at the end
+NOTE: sample178 (identical to sample91) is ignored but added at the end
+NOTE: sample146 (identical to sample91) is ignored but added at the end
+NOTE: sample141 (identical to sample91) is ignored but added at the end
+NOTE: sample135 (identical to sample91) is ignored but added at the end
+NOTE: sample150 (identical to sample91) is ignored but added at the end
+NOTE: sample144 (identical to sample91) is ignored but added at the end
+NOTE: sample152 (identical to sample91) is ignored but added at the end
+NOTE: sample309 (identical to sample91) is ignored but added at the end
+NOTE: sample281 (identical to sample91) is ignored but added at the end
+NOTE: sample311 (identical to sample91) is ignored but added at the end
+NOTE: sample320 (identical to sample91) is ignored but added at the end
+NOTE: sample307 (identical to sample91) is ignored but added at the end
+NOTE: sample276 (identical to sample91) is ignored but added at the end
+NOTE: sample250 (identical to sample91) is ignored but added at the end
+NOTE: sample230 (identical to sample91) is ignored but added at the end
+NOTE: sample253 (identical to sample91) is ignored but added at the end
+NOTE: sample977 (identical to sample91) is ignored but added at the end
+NOTE: sample2241 (identical to sample91) is ignored but added at the end
+NOTE: sample2596 (identical to sample91) is ignored but added at the end
+NOTE: sample1291 (identical to sample91) is ignored but added at the end
+NOTE: sample3458 (identical to sample91) is ignored but added at the end
+NOTE: sample3574 (identical to sample91) is ignored but added at the end
+NOTE: sample1672 (identical to sample91) is ignored but added at the end
+NOTE: sample2945 (identical to sample91) is ignored but added at the end
+NOTE: sample879 (identical to sample91) is ignored but added at the end
+NOTE: sample1204 (identical to sample91) is ignored but added at the end
+NOTE: sample4931 (identical to sample91) is ignored but added at the end
+NOTE: sample5010 (identical to sample91) is ignored but added at the end
+NOTE: sample4928 (identical to sample91) is ignored but added at the end
+NOTE: sample4961 (identical to sample91) is ignored but added at the end
+NOTE: sample4896 (identical to sample91) is ignored but added at the end
+NOTE: sample4945 (identical to sample91) is ignored but added at the end
+NOTE: sample4936 (identical to sample91) is ignored but added at the end
+NOTE: sample4959 (identical to sample91) is ignored but added at the end
+NOTE: sample4960 (identical to sample91) is ignored but added at the end
+NOTE: sample4924 (identical to sample91) is ignored but added at the end
+NOTE: sample4897 (identical to sample91) is ignored but added at the end
+NOTE: sample4929 (identical to sample91) is ignored but added at the end
+NOTE: sample5083 (identical to sample91) is ignored but added at the end
+NOTE: sample5239 (identical to sample91) is ignored but added at the end
+NOTE: sample5240 (identical to sample91) is ignored but added at the end
+NOTE: sample5089 (identical to sample91) is ignored but added at the end
+NOTE: sample5139 (identical to sample91) is ignored but added at the end
+NOTE: sample5035 (identical to sample91) is ignored but added at the end
+NOTE: sample5168 (identical to sample91) is ignored but added at the end
+NOTE: sample5235 (identical to sample91) is ignored but added at the end
+NOTE: sample5200 (identical to sample91) is ignored but added at the end
+NOTE: sample5227 (identical to sample91) is ignored but added at the end
+NOTE: sample5199 (identical to sample91) is ignored but added at the end
+NOTE: sample5080 (identical to sample91) is ignored but added at the end
+NOTE: sample5256 (identical to sample91) is ignored but added at the end
+NOTE: sample5212 (identical to sample91) is ignored but added at the end
+NOTE: sample5294 (identical to sample91) is ignored but added at the end
+NOTE: sample5330 (identical to sample91) is ignored but added at the end
+NOTE: sample5301 (identical to sample91) is ignored but added at the end
+NOTE: sample5332 (identical to sample91) is ignored but added at the end
+NOTE: sample5282 (identical to sample91) is ignored but added at the end
+NOTE: sample105 (identical to sample91) is ignored but added at the end
+NOTE: sample5312 (identical to sample91) is ignored but added at the end
+NOTE: sample5324 (identical to sample91) is ignored but added at the end
+NOTE: sample5292 (identical to sample91) is ignored but added at the end
+NOTE: sample5327 (identical to sample91) is ignored but added at the end
+NOTE: sample5323 (identical to sample91) is ignored but added at the end
+NOTE: sample5992 (identical to sample91) is ignored but added at the end
+NOTE: sample6258 (identical to sample91) is ignored but added at the end
+NOTE: sample6007 (identical to sample91) is ignored but added at the end
+NOTE: sample6399 (identical to sample91) is ignored but added at the end
+NOTE: sample5728 (identical to sample91) is ignored but added at the end
+NOTE: sample5674 (identical to sample91) is ignored but added at the end
+NOTE: sample6533 (identical to sample91) is ignored but added at the end
+NOTE: sample6052 (identical to sample91) is ignored but added at the end
+NOTE: sample6586 (identical to sample91) is ignored but added at the end
+NOTE: sample6657 (identical to sample91) is ignored but added at the end
+NOTE: sample6656 (identical to sample91) is ignored but added at the end
+NOTE: sample6650 (identical to sample91) is ignored but added at the end
+NOTE: sample6632 (identical to sample91) is ignored but added at the end
+NOTE: sample6651 (identical to sample91) is ignored but added at the end
+NOTE: sample6707 (identical to sample91) is ignored but added at the end
+NOTE: sample6709 (identical to sample91) is ignored but added at the end
+NOTE: sample6710 (identical to sample91) is ignored but added at the end
+NOTE: sample6711 (identical to sample91) is ignored but added at the end
+NOTE: sample6712 (identical to sample91) is ignored but added at the end
+NOTE: sample6716 (identical to sample91) is ignored but added at the end
+NOTE: sample6720 (identical to sample91) is ignored but added at the end
+NOTE: sample6778 (identical to sample91) is ignored but added at the end
+NOTE: sample6753 (identical to sample91) is ignored but added at the end
+NOTE: sample6772 (identical to sample91) is ignored but added at the end
+NOTE: sample6722 (identical to sample91) is ignored but added at the end
+NOTE: sample6757 (identical to sample91) is ignored but added at the end
+NOTE: sample6728 (identical to sample91) is ignored but added at the end
+NOTE: sample6777 (identical to sample91) is ignored but added at the end
+NOTE: sample6780 (identical to sample91) is ignored but added at the end
+NOTE: sample6725 (identical to sample91) is ignored but added at the end
+NOTE: sample6921 (identical to sample91) is ignored but added at the end
+NOTE: sample6862 (identical to sample91) is ignored but added at the end
+NOTE: sample6888 (identical to sample91) is ignored but added at the end
+NOTE: sample6841 (identical to sample91) is ignored but added at the end
+NOTE: sample6901 (identical to sample91) is ignored but added at the end
+NOTE: sample6825 (identical to sample91) is ignored but added at the end
+NOTE: sample6933 (identical to sample91) is ignored but added at the end
+NOTE: sample6831 (identical to sample91) is ignored but added at the end
+NOTE: sample6945 (identical to sample91) is ignored but added at the end
+NOTE: sample6906 (identical to sample91) is ignored but added at the end
+NOTE: sample6897 (identical to sample91) is ignored but added at the end
+NOTE: sample6930 (identical to sample91) is ignored but added at the end
+NOTE: sample6805 (identical to sample91) is ignored but added at the end
+NOTE: sample7114 (identical to sample91) is ignored but added at the end
+NOTE: sample7193 (identical to sample91) is ignored but added at the end
+NOTE: sample7029 (identical to sample91) is ignored but added at the end
+NOTE: sample7156 (identical to sample91) is ignored but added at the end
+NOTE: sample7000 (identical to sample91) is ignored but added at the end
+NOTE: sample7211 (identical to sample91) is ignored but added at the end
+NOTE: sample7289 (identical to sample91) is ignored but added at the end
+NOTE: sample7297 (identical to sample91) is ignored but added at the end
+NOTE: sample7300 (identical to sample91) is ignored but added at the end
+NOTE: sample7305 (identical to sample91) is ignored but added at the end
+NOTE: sample7292 (identical to sample91) is ignored but added at the end
+NOTE: sample7299 (identical to sample91) is ignored but added at the end
+NOTE: sample7301 (identical to sample91) is ignored but added at the end
+NOTE: sample7288 (identical to sample91) is ignored but added at the end
+NOTE: sample7294 (identical to sample91) is ignored but added at the end
+NOTE: sample7282 (identical to sample91) is ignored but added at the end
+NOTE: sample7284 (identical to sample91) is ignored but added at the end
+NOTE: sample7278 (identical to sample91) is ignored but added at the end
+NOTE: sample7296 (identical to sample91) is ignored but added at the end
+NOTE: sample7291 (identical to sample91) is ignored but added at the end
+NOTE: sample7307 (identical to sample91) is ignored but added at the end
+NOTE: sample7309 (identical to sample91) is ignored but added at the end
+NOTE: sample7310 (identical to sample91) is ignored but added at the end
+NOTE: sample7313 (identical to sample91) is ignored but added at the end
+NOTE: sample7314 (identical to sample91) is ignored but added at the end
+NOTE: sample8452 (identical to sample91) is ignored but added at the end
+NOTE: sample7378 (identical to sample91) is ignored but added at the end
+NOTE: sample8054 (identical to sample91) is ignored but added at the end
+NOTE: sample7959 (identical to sample91) is ignored but added at the end
+NOTE: sample7936 (identical to sample91) is ignored but added at the end
+NOTE: sample7357 (identical to sample91) is ignored but added at the end
+NOTE: sample7809 (identical to sample91) is ignored but added at the end
+NOTE: sample8722 (identical to sample91) is ignored but added at the end
+NOTE: sample8645 (identical to sample91) is ignored but added at the end
+NOTE: sample8807 (identical to sample91) is ignored but added at the end
+NOTE: sample8506 (identical to sample91) is ignored but added at the end
+NOTE: sample8511 (identical to sample91) is ignored but added at the end
+NOTE: sample8867 (identical to sample91) is ignored but added at the end
+NOTE: sample8521 (identical to sample91) is ignored but added at the end
+NOTE: sample8677 (identical to sample91) is ignored but added at the end
+NOTE: sample8528 (identical to sample91) is ignored but added at the end
+NOTE: sample8489 (identical to sample91) is ignored but added at the end
+NOTE: sample9159 (identical to sample91) is ignored but added at the end
+NOTE: sample8910 (identical to sample91) is ignored but added at the end
+NOTE: sample9268 (identical to sample91) is ignored but added at the end
+NOTE: sample9288 (identical to sample91) is ignored but added at the end
+NOTE: sample9028 (identical to sample91) is ignored but added at the end
+NOTE: sample9226 (identical to sample91) is ignored but added at the end
+NOTE: sample9078 (identical to sample91) is ignored but added at the end
+NOTE: sample9374 (identical to sample91) is ignored but added at the end
+NOTE: sample9301 (identical to sample91) is ignored but added at the end
+NOTE: sample9380 (identical to sample91) is ignored but added at the end
+NOTE: sample9396 (identical to sample91) is ignored but added at the end
+NOTE: sample9343 (identical to sample91) is ignored but added at the end
+NOTE: sample9306 (identical to sample91) is ignored but added at the end
+NOTE: sample9336 (identical to sample91) is ignored but added at the end
+NOTE: sample9340 (identical to sample91) is ignored but added at the end
+NOTE: sample10056 (identical to sample91) is ignored but added at the end
+NOTE: sample9953 (identical to sample91) is ignored but added at the end
+NOTE: sample10390 (identical to sample91) is ignored but added at the end
+NOTE: sample9470 (identical to sample91) is ignored but added at the end
+NOTE: sample10365 (identical to sample91) is ignored but added at the end
+NOTE: sample10748 (identical to sample91) is ignored but added at the end
+NOTE: sample9709 (identical to sample91) is ignored but added at the end
+NOTE: sample9751 (identical to sample91) is ignored but added at the end
+NOTE: sample10723 (identical to sample91) is ignored but added at the end
+NOTE: sample10853 (identical to sample91) is ignored but added at the end
+NOTE: sample12054 (identical to sample91) is ignored but added at the end
+NOTE: sample12533 (identical to sample91) is ignored but added at the end
+NOTE: sample12588 (identical to sample91) is ignored but added at the end
+NOTE: sample12513 (identical to sample91) is ignored but added at the end
+NOTE: sample12683 (identical to sample91) is ignored but added at the end
+NOTE: sample11525 (identical to sample91) is ignored but added at the end
+NOTE: sample12821 (identical to sample91) is ignored but added at the end
+NOTE: sample11699 (identical to sample91) is ignored but added at the end
+NOTE: sample12906 (identical to sample91) is ignored but added at the end
+NOTE: sample12941 (identical to sample91) is ignored but added at the end
+NOTE: sample12918 (identical to sample91) is ignored but added at the end
+NOTE: sample12927 (identical to sample91) is ignored but added at the end
+NOTE: sample12923 (identical to sample91) is ignored but added at the end
+NOTE: sample12943 (identical to sample91) is ignored but added at the end
+NOTE: sample12935 (identical to sample91) is ignored but added at the end
+NOTE: sample12933 (identical to sample91) is ignored but added at the end
+NOTE: sample12939 (identical to sample91) is ignored but added at the end
+NOTE: sample12926 (identical to sample91) is ignored but added at the end
+NOTE: sample12951 (identical to sample91) is ignored but added at the end
+NOTE: sample12938 (identical to sample91) is ignored but added at the end
+NOTE: sample12988 (identical to sample91) is ignored but added at the end
+NOTE: sample12986 (identical to sample91) is ignored but added at the end
+NOTE: sample12994 (identical to sample91) is ignored but added at the end
+NOTE: sample12964 (identical to sample91) is ignored but added at the end
+NOTE: sample12965 (identical to sample91) is ignored but added at the end
+NOTE: sample13003 (identical to sample91) is ignored but added at the end
+NOTE: sample12968 (identical to sample91) is ignored but added at the end
+NOTE: sample12998 (identical to sample91) is ignored but added at the end
+NOTE: sample13004 (identical to sample91) is ignored but added at the end
+NOTE: sample13005 (identical to sample91) is ignored but added at the end
+NOTE: sample13006 (identical to sample91) is ignored but added at the end
+NOTE: sample13047 (identical to sample91) is ignored but added at the end
+NOTE: sample13044 (identical to sample91) is ignored but added at the end
+NOTE: sample13033 (identical to sample91) is ignored but added at the end
+NOTE: sample13089 (identical to sample91) is ignored but added at the end
+NOTE: sample13078 (identical to sample91) is ignored but added at the end
+NOTE: sample13019 (identical to sample91) is ignored but added at the end
+NOTE: sample13008 (identical to sample91) is ignored but added at the end
+NOTE: sample13075 (identical to sample91) is ignored but added at the end
+NOTE: sample13025 (identical to sample91) is ignored but added at the end
+NOTE: sample13111 (identical to sample91) is ignored but added at the end
+NOTE: sample13108 (identical to sample91) is ignored but added at the end
+NOTE: sample13123 (identical to sample91) is ignored but added at the end
+NOTE: sample13137 (identical to sample91) is ignored but added at the end
+NOTE: sample13146 (identical to sample91) is ignored but added at the end
+NOTE: sample13114 (identical to sample91) is ignored but added at the end
+NOTE: sample13095 (identical to sample91) is ignored but added at the end
+NOTE: sample13152 (identical to sample91) is ignored but added at the end
+NOTE: sample13153 (identical to sample91) is ignored but added at the end
+NOTE: sample13154 (identical to sample91) is ignored but added at the end
+NOTE: sample13155 (identical to sample91) is ignored but added at the end
+NOTE: sample13156 (identical to sample91) is ignored but added at the end
+NOTE: sample13175 (identical to sample91) is ignored but added at the end
+NOTE: sample13204 (identical to sample91) is ignored but added at the end
+NOTE: sample13180 (identical to sample91) is ignored but added at the end
+NOTE: sample13213 (identical to sample91) is ignored but added at the end
+NOTE: sample13196 (identical to sample91) is ignored but added at the end
+NOTE: sample13176 (identical to sample91) is ignored but added at the end
+NOTE: sample13240 (identical to sample91) is ignored but added at the end
+NOTE: sample13159 (identical to sample91) is ignored but added at the end
+NOTE: sample13199 (identical to sample91) is ignored but added at the end
+NOTE: sample13167 (identical to sample91) is ignored but added at the end
+NOTE: sample13223 (identical to sample91) is ignored but added at the end
+NOTE: sample13174 (identical to sample91) is ignored but added at the end
+NOTE: sample13198 (identical to sample91) is ignored but added at the end
+NOTE: sample13336 (identical to sample91) is ignored but added at the end
+NOTE: sample13463 (identical to sample91) is ignored but added at the end
+NOTE: sample13583 (identical to sample91) is ignored but added at the end
+NOTE: sample13462 (identical to sample91) is ignored but added at the end
+NOTE: sample13356 (identical to sample91) is ignored but added at the end
+NOTE: sample13775 (identical to sample91) is ignored but added at the end
+NOTE: sample13807 (identical to sample91) is ignored but added at the end
+NOTE: sample13651 (identical to sample91) is ignored but added at the end
+NOTE: sample13710 (identical to sample91) is ignored but added at the end
+NOTE: sample13784 (identical to sample91) is ignored but added at the end
+NOTE: sample13801 (identical to sample91) is ignored but added at the end
+NOTE: sample13771 (identical to sample91) is ignored but added at the end
+NOTE: sample13782 (identical to sample91) is ignored but added at the end
+NOTE: sample13707 (identical to sample91) is ignored but added at the end
+NOTE: sample14205 (identical to sample91) is ignored but added at the end
+NOTE: sample16094 (identical to sample91) is ignored but added at the end
+NOTE: sample15182 (identical to sample91) is ignored but added at the end
+NOTE: sample15594 (identical to sample91) is ignored but added at the end
+NOTE: sample15948 (identical to sample91) is ignored but added at the end
+NOTE: sample13874 (identical to sample91) is ignored but added at the end
+NOTE: sample15090 (identical to sample91) is ignored but added at the end
+NOTE: sample14358 (identical to sample91) is ignored but added at the end
+NOTE: sample13846 (identical to sample91) is ignored but added at the end
+NOTE: sample14785 (identical to sample91) is ignored but added at the end
+NOTE: sample16221 (identical to sample91) is ignored but added at the end
+NOTE: sample14031 (identical to sample91) is ignored but added at the end
+NOTE: sample16315 (identical to sample91) is ignored but added at the end
+NOTE: sample16316 (identical to sample91) is ignored but added at the end
+NOTE: sample16314 (identical to sample91) is ignored but added at the end
+NOTE: sample16305 (identical to sample91) is ignored but added at the end
+NOTE: sample16321 (identical to sample91) is ignored but added at the end
+NOTE: sample16302 (identical to sample91) is ignored but added at the end
+NOTE: sample16320 (identical to sample91) is ignored but added at the end
+NOTE: sample16319 (identical to sample91) is ignored but added at the end
+NOTE: sample16307 (identical to sample91) is ignored but added at the end
+NOTE: sample16312 (identical to sample91) is ignored but added at the end
+NOTE: sample16303 (identical to sample91) is ignored but added at the end
+NOTE: sample16304 (identical to sample91) is ignored but added at the end
+NOTE: sample16311 (identical to sample91) is ignored but added at the end
+NOTE: sample16328 (identical to sample91) is ignored but added at the end
+NOTE: sample16329 (identical to sample91) is ignored but added at the end
+NOTE: sample16330 (identical to sample91) is ignored but added at the end
+NOTE: sample16331 (identical to sample91) is ignored but added at the end
+NOTE: sample16332 (identical to sample91) is ignored but added at the end
+NOTE: sample16333 (identical to sample91) is ignored but added at the end
+NOTE: sample16334 (identical to sample91) is ignored but added at the end
+NOTE: sample16635 (identical to sample91) is ignored but added at the end
+NOTE: sample16769 (identical to sample91) is ignored but added at the end
+NOTE: sample16670 (identical to sample91) is ignored but added at the end
+NOTE: sample16533 (identical to sample91) is ignored but added at the end
+NOTE: sample16852 (identical to sample91) is ignored but added at the end
+NOTE: sample16398 (identical to sample91) is ignored but added at the end
+NOTE: sample16649 (identical to sample91) is ignored but added at the end
+NOTE: sample17026 (identical to sample91) is ignored but added at the end
+NOTE: sample16960 (identical to sample91) is ignored but added at the end
+NOTE: sample17038 (identical to sample91) is ignored but added at the end
+NOTE: sample17061 (identical to sample91) is ignored but added at the end
+NOTE: sample17027 (identical to sample91) is ignored but added at the end
+NOTE: sample16969 (identical to sample91) is ignored but added at the end
+NOTE: sample17020 (identical to sample91) is ignored but added at the end
+NOTE: sample16971 (identical to sample91) is ignored but added at the end
+NOTE: sample16977 (identical to sample91) is ignored but added at the end
+NOTE: sample16966 (identical to sample91) is ignored but added at the end
+NOTE: sample16936 (identical to sample91) is ignored but added at the end
+NOTE: sample16974 (identical to sample91) is ignored but added at the end
+NOTE: sample17092 (identical to sample91) is ignored but added at the end
+NOTE: sample17094 (identical to sample91) is ignored but added at the end
+NOTE: sample17104 (identical to sample91) is ignored but added at the end
+NOTE: sample17080 (identical to sample91) is ignored but added at the end
+NOTE: sample17101 (identical to sample91) is ignored but added at the end
+NOTE: sample17088 (identical to sample91) is ignored but added at the end
+NOTE: sample17091 (identical to sample91) is ignored but added at the end
+NOTE: sample17105 (identical to sample91) is ignored but added at the end
+NOTE: sample17106 (identical to sample91) is ignored but added at the end
+NOTE: sample17107 (identical to sample91) is ignored but added at the end
+NOTE: sample17108 (identical to sample91) is ignored but added at the end
+NOTE: sample17109 (identical to sample91) is ignored but added at the end
+NOTE: sample17111 (identical to sample91) is ignored but added at the end
+NOTE: sample17229 (identical to sample91) is ignored but added at the end
+NOTE: sample17285 (identical to sample91) is ignored but added at the end
+NOTE: sample17131 (identical to sample91) is ignored but added at the end
+NOTE: sample17183 (identical to sample91) is ignored but added at the end
+NOTE: sample17283 (identical to sample91) is ignored but added at the end
+NOTE: sample17141 (identical to sample91) is ignored but added at the end
+NOTE: sample17246 (identical to sample91) is ignored but added at the end
+NOTE: sample17168 (identical to sample91) is ignored but added at the end
+NOTE: sample17187 (identical to sample91) is ignored but added at the end
+NOTE: sample17238 (identical to sample91) is ignored but added at the end
+NOTE: sample17237 (identical to sample91) is ignored but added at the end
+NOTE: sample17317 (identical to sample91) is ignored but added at the end
+NOTE: sample17303 (identical to sample91) is ignored but added at the end
+NOTE: sample17316 (identical to sample91) is ignored but added at the end
+NOTE: sample17306 (identical to sample91) is ignored but added at the end
+NOTE: sample17311 (identical to sample91) is ignored but added at the end
+NOTE: sample17305 (identical to sample91) is ignored but added at the end
+NOTE: sample17313 (identical to sample91) is ignored but added at the end
+NOTE: sample17319 (identical to sample91) is ignored but added at the end
+NOTE: sample17321 (identical to sample91) is ignored but added at the end
+NOTE: sample17322 (identical to sample91) is ignored but added at the end
+NOTE: sample17323 (identical to sample91) is ignored but added at the end
+NOTE: sample17324 (identical to sample91) is ignored but added at the end
+NOTE: sample17325 (identical to sample91) is ignored but added at the end
+NOTE: sample17326 (identical to sample91) is ignored but added at the end
+NOTE: sample17327 (identical to sample91) is ignored but added at the end
+NOTE: sample17328 (identical to sample91) is ignored but added at the end
+NOTE: sample19029 (identical to sample91) is ignored but added at the end
+NOTE: sample18094 (identical to sample91) is ignored but added at the end
+NOTE: sample18933 (identical to sample91) is ignored but added at the end
+NOTE: sample18810 (identical to sample91) is ignored but added at the end
+NOTE: sample21270 (identical to sample91) is ignored but added at the end
+NOTE: sample19630 (identical to sample91) is ignored but added at the end
+NOTE: sample22837 (identical to sample91) is ignored but added at the end
+NOTE: sample22270 (identical to sample91) is ignored but added at the end
+NOTE: sample22686 (identical to sample91) is ignored but added at the end
+NOTE: sample21472 (identical to sample91) is ignored but added at the end
+NOTE: sample22759 (identical to sample91) is ignored but added at the end
+NOTE: sample21982 (identical to sample91) is ignored but added at the end
+NOTE: sample23196 (identical to sample91) is ignored but added at the end
+NOTE: sample23155 (identical to sample91) is ignored but added at the end
+NOTE: sample22354 (identical to sample91) is ignored but added at the end
+NOTE: sample23490 (identical to sample91) is ignored but added at the end
+NOTE: sample23282 (identical to sample91) is ignored but added at the end
+NOTE: sample24300 (identical to sample91) is ignored but added at the end
+NOTE: sample23422 (identical to sample91) is ignored but added at the end
+NOTE: sample24534 (identical to sample91) is ignored but added at the end
+NOTE: sample24075 (identical to sample91) is ignored but added at the end
+NOTE: sample23376 (identical to sample91) is ignored but added at the end
+NOTE: sample24620 (identical to sample91) is ignored but added at the end
+NOTE: sample24621 (identical to sample91) is ignored but added at the end
+NOTE: sample24622 (identical to sample91) is ignored but added at the end
+NOTE: sample24699 (identical to sample91) is ignored but added at the end
+NOTE: sample29325 (identical to sample91) is ignored but added at the end
+NOTE: sample28673 (identical to sample91) is ignored but added at the end
+NOTE: sample27640 (identical to sample91) is ignored but added at the end
+NOTE: sample28580 (identical to sample91) is ignored but added at the end
+NOTE: sample26198 (identical to sample91) is ignored but added at the end
+NOTE: sample27678 (identical to sample91) is ignored but added at the end
+NOTE: sample30466 (identical to sample91) is ignored but added at the end
+NOTE: sample30166 (identical to sample91) is ignored but added at the end
+NOTE: sample31061 (identical to sample91) is ignored but added at the end
+NOTE: sample29849 (identical to sample91) is ignored but added at the end
+NOTE: sample31309 (identical to sample91) is ignored but added at the end
+NOTE: sample32081 (identical to sample91) is ignored but added at the end
+NOTE: sample32151 (identical to sample91) is ignored but added at the end
+NOTE: sample32133 (identical to sample91) is ignored but added at the end
+NOTE: sample32108 (identical to sample91) is ignored but added at the end
+NOTE: sample32093 (identical to sample91) is ignored but added at the end
+NOTE: sample32104 (identical to sample91) is ignored but added at the end
+NOTE: sample32112 (identical to sample91) is ignored but added at the end
+NOTE: sample32109 (identical to sample91) is ignored but added at the end
+NOTE: sample32091 (identical to sample91) is ignored but added at the end
+NOTE: sample32150 (identical to sample91) is ignored but added at the end
+NOTE: sample32115 (identical to sample91) is ignored but added at the end
+NOTE: sample32137 (identical to sample91) is ignored but added at the end
+NOTE: sample95 (identical to sample63) is ignored but added at the end
+NOTE: sample109 (identical to sample116) is ignored but added at the end
+NOTE: sample17318 (identical to sample116) is ignored but added at the end
+NOTE: sample315 (identical to sample192) is ignored but added at the end
+NOTE: sample6595 (identical to sample192) is ignored but added at the end
+NOTE: sample6708 (identical to sample192) is ignored but added at the end
+NOTE: sample7311 (identical to sample192) is ignored but added at the end
+NOTE: sample7312 (identical to sample192) is ignored but added at the end
+NOTE: sample9375 (identical to sample192) is ignored but added at the end
+NOTE: sample9366 (identical to sample192) is ignored but added at the end
+NOTE: sample12038 (identical to sample192) is ignored but added at the end
+NOTE: sample12925 (identical to sample192) is ignored but added at the end
+NOTE: sample13016 (identical to sample192) is ignored but added at the end
+NOTE: sample13612 (identical to sample192) is ignored but added at the end
+NOTE: sample13811 (identical to sample192) is ignored but added at the end
+NOTE: sample13656 (identical to sample192) is ignored but added at the end
+NOTE: sample15590 (identical to sample192) is ignored but added at the end
+NOTE: sample14176 (identical to sample192) is ignored but added at the end
+NOTE: sample16322 (identical to sample192) is ignored but added at the end
+NOTE: sample16323 (identical to sample192) is ignored but added at the end
+NOTE: sample16632 (identical to sample192) is ignored but added at the end
+NOTE: sample16362 (identical to sample192) is ignored but added at the end
+NOTE: sample23575 (identical to sample192) is ignored but added at the end
+NOTE: sample24619 (identical to sample192) is ignored but added at the end
+NOTE: sample24937 (identical to sample192) is ignored but added at the end
+NOTE: sample25918 (identical to sample192) is ignored but added at the end
+NOTE: sample25090 (identical to sample192) is ignored but added at the end
+NOTE: sample24921 (identical to sample192) is ignored but added at the end
+NOTE: sample31868 (identical to sample192) is ignored but added at the end
+NOTE: sample32082 (identical to sample192) is ignored but added at the end
+NOTE: sample32143 (identical to sample192) is ignored but added at the end
+NOTE: sample32154 (identical to sample192) is ignored but added at the end
+NOTE: sample32099 (identical to sample192) is ignored but added at the end
+NOTE: sample13367 (identical to sample2603) is ignored but added at the end
+NOTE: sample16553 (identical to sample2603) is ignored but added at the end
+NOTE: sample17085 (identical to sample346) is ignored but added at the end
+NOTE: sample22974 (identical to sample346) is ignored but added at the end
+NOTE: sample22784 (identical to sample346) is ignored but added at the end
+NOTE: sample22492 (identical to sample346) is ignored but added at the end
+NOTE: sample8642 (identical to sample4995) is ignored but added at the end
+NOTE: sample12250 (identical to sample4995) is ignored but added at the end
+NOTE: sample12081 (identical to sample4995) is ignored but added at the end
+NOTE: sample13679 (identical to sample4995) is ignored but added at the end
+NOTE: sample16978 (identical to sample4995) is ignored but added at the end
+NOTE: sample22664 (identical to sample4995) is ignored but added at the end
+NOTE: sample32092 (identical to sample4995) is ignored but added at the end
+NOTE: sample5331 (identical to sample5303) is ignored but added at the end
+NOTE: sample6612 (identical to sample5303) is ignored but added at the end
+NOTE: sample6706 (identical to sample5303) is ignored but added at the end
+NOTE: sample6685 (identical to sample5303) is ignored but added at the end
+NOTE: sample6684 (identical to sample5303) is ignored but added at the end
+NOTE: sample6715 (identical to sample5303) is ignored but added at the end
+NOTE: sample7039 (identical to sample5303) is ignored but added at the end
+NOTE: sample8590 (identical to sample5303) is ignored but added at the end
+NOTE: sample8961 (identical to sample5303) is ignored but added at the end
+NOTE: sample12989 (identical to sample5303) is ignored but added at the end
+NOTE: sample12981 (identical to sample5303) is ignored but added at the end
+NOTE: sample13026 (identical to sample5303) is ignored but added at the end
+NOTE: sample13032 (identical to sample5303) is ignored but added at the end
+NOTE: sample16189 (identical to sample5303) is ignored but added at the end
+NOTE: sample16306 (identical to sample5303) is ignored but added at the end
+NOTE: sample17113 (identical to sample5303) is ignored but added at the end
+NOTE: sample23318 (identical to sample5303) is ignored but added at the end
+NOTE: sample9636 (identical to sample6743) is ignored but added at the end
+NOTE: sample13147 (identical to sample6743) is ignored but added at the end
+NOTE: sample13104 (identical to sample6743) is ignored but added at the end
+NOTE: sample13805 (identical to sample6743) is ignored but added at the end
+NOTE: sample19999 (identical to sample6743) is ignored but added at the end
+NOTE: sample17818 (identical to sample6743) is ignored but added at the end
+NOTE: sample31760 (identical to sample6743) is ignored but added at the end
+NOTE: sample8912 (identical to sample7179) is ignored but added at the end
+NOTE: sample16325 (identical to sample7179) is ignored but added at the end
+NOTE: sample16326 (identical to sample7179) is ignored but added at the end
+NOTE: sample7419 (identical to sample7393) is ignored but added at the end
+NOTE: sample9309 (identical to sample9349) is ignored but added at the end
+Alignment was printed to ./iqtree_output/cov19_tree.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to ./iqtree_output/cov19_tree.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.006 seconds
+Measuring multi-threading efficiency up to 16 CPU cores
+Increase to 10 rounds for branch lengths
+905 trees examined
+Threads: 1 / Time: 16.000 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -7170
+Threads: 2 / Time: 10.995 sec / Speedup: 1.455 / Efficiency: 73% / LogL: -7170
+Threads: 3 / Time: 10.354 sec / Speedup: 1.545 / Efficiency: 52% / LogL: -7170
+Threads: 4 / Time: 10.365 sec / Speedup: 1.544 / Efficiency: 39% / LogL: -7170
+BEST NUMBER OF THREADS: 3
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -6520.701
+Optimal log-likelihood: -6520.700
+Rate parameters:  A-C: 0.13047  A-G: 0.63498  A-T: 0.19037  C-G: 0.31122  C-T: 2.01449  G-T: 1.00000
+Base frequencies:  A: 0.294  C: 0.188  G: 0.184  T: 0.334
+Proportion of invariable sites: 0.483
+Gamma shape alpha: 13.797
+Parameters optimization took 1 rounds (0.031 sec)
+Time for fast ML tree search: 0.172 seconds
+
+NOTE: ModelFinder requires 7 MB RAM!
+ModelFinder will test up to 88 DNA models (sample size: 3822) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  1  GTR+F         6522.082     355 13754.164    13827.089    15972.391
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  2  GTR+F+I       6520.680     356 13753.361    13826.719    15977.837
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  3  GTR+F+G4      6520.739     356 13753.478    13826.835    15977.954
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  4  GTR+F+I+G4    6520.699     357 13755.398    13829.189    15986.122
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  5  SYM           6674.287     352 14052.574    14124.211    16252.056
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  6  SYM+I         6671.659     353 14049.318    14121.384    16255.049
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  7  SYM+G4        6671.699     353 14049.398    14121.463    16255.128
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  9  TVM+F         6533.573     354 13775.147    13847.642    15987.126
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 10  TVM+F+I       6532.265     355 13774.529    13847.455    15992.757
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 11  TVM+F+G4      6532.290     355 13774.579    13847.505    15992.807
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 13  TVMe          6687.177     351 14076.355    14147.566    16269.589
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 14  TVMe+I        6685.074     352 14074.148    14145.786    16273.630
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 15  TVMe+G4       6685.092     352 14074.183    14145.821    16273.666
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 17  TIM3+F        6536.069     353 13778.138    13850.203    15983.868
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 18  TIM3+F+I      6534.418     354 13776.835    13849.330    15988.814
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 19  TIM3+F+G4     6534.484     354 13776.968    13849.463    15988.948
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 21  TIM3e         6683.747     350 14067.494    14138.281    16254.480
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 22  TIM3e+I       6680.881     351 14063.763    14134.974    16256.997
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 23  TIM3e+G4      6680.920     351 14063.840    14135.051    16257.073
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 25  TIM2+F        6526.389     353 13758.778    13830.843    15964.508
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 26  TIM2+F+I      6525.164     354 13758.328    13830.823    15970.307
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 27  TIM2+F+G4     6525.229     354 13758.459    13830.954    15970.438
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 29  TIM2e         6681.266     350 14062.532    14133.318    16249.517
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 30  TIM2e+I       6679.394     351 14060.789    14132.000    16254.022
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 31  TIM2e+G4      6679.456     351 14060.913    14132.124    16254.146
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 33  TIM+F         6534.092     353 13774.184    13846.250    15979.915
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 34  TIM+F+I       6532.739     354 13773.477    13845.972    15985.457
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 35  TIM+F+G4      6532.811     354 13773.623    13846.118    15985.602
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 37  TIMe          6686.235     350 14072.470    14143.256    16259.455
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 38  TIMe+I        6684.095     351 14070.190    14141.401    16263.423
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 39  TIMe+G4       6684.151     351 14070.303    14141.514    16263.537
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 41  TPM3u+F       6547.565     352 13799.130    13870.768    15998.613
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 42  TPM3u+F+I     6546.069     353 13798.138    13870.204    16003.869
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 43  TPM3u+F+G4    6546.105     353 13798.209    13870.275    16003.940
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 45  TPM3+F        6547.565     352 13799.130    13870.768    15998.613
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 46  TPM3+F+I      6546.069     353 13798.138    13870.204    16003.869
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 47  TPM3+F+G4     6546.105     353 13798.209    13870.275    16003.940
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 49  TPM2u+F       6537.888     352 13779.777    13851.415    15979.259
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 50  TPM2u+F+I     6536.774     353 13779.547    13851.613    15985.278
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 51  TPM2u+F+G4    6536.807     353 13779.614    13851.680    15985.345
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 53  TPM2+F        6537.888     352 13779.777    13851.415    15979.259
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 54  TPM2+F+I      6536.774     353 13779.547    13851.613    15985.278
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 55  TPM2+F+G4     6536.807     353 13779.614    13851.680    15985.345
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 57  K3Pu+F        6545.587     352 13795.174    13866.812    15994.657
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 58  K3Pu+F+I      6544.400     353 13794.801    13866.867    16000.532
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 59  K3Pu+F+G4     6544.445     353 13794.889    13866.955    16000.620
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 61  K3P           6699.122     349 14096.244    14166.607    16276.981
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 62  K3P+I         6697.302     350 14094.603    14165.390    16281.589
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 63  K3P+G4        6697.336     350 14094.672    14165.459    16281.657
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 65  TN+F          6539.828     352 13783.657    13855.295    15983.139
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 66  TN+F+I        6538.378     353 13782.755    13854.821    15988.486
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 67  TN+F+G4       6538.449     353 13782.898    13854.964    15988.629
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 69  TNe           6690.506     349 14079.012    14149.375    16259.749
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 70  TNe+I         6688.372     350 14076.745    14147.531    16263.730
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 71  TNe+G4        6688.429     350 14076.858    14147.644    16263.843
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 73  HKY+F         6551.324     351 13804.647    13875.859    15997.881
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 74  HKY+F+I       6550.046     352 13804.091    13875.729    16003.574
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 75  HKY+F+G4      6550.089     352 13804.178    13875.816    16003.660
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 77  K2P           6703.397     348 14102.795    14172.735    16277.283
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 78  K2P+I         6701.576     349 14101.153    14171.516    16281.890
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 79  K2P+G4        6701.610     349 14101.220    14171.583    16281.957
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 81  F81+F         6578.869     350 13857.739    13928.525    16044.724
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 82  F81+F+I       6577.360     351 13856.721    13927.932    16049.954
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 83  F81+F+G4      6577.398     351 13856.795    13928.007    16050.029
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 85  JC            6728.221     347 14150.442    14219.962    16318.682
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 86  JC+I          6726.400     348 14148.801    14218.741    16323.289
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 87  JC+G4         6726.434     348 14148.868    14218.809    16323.356
+Akaike Information Criterion:           GTR+F+I
+Corrected Akaike Information Criterion: GTR+F+I
+Bayesian Information Criterion:         TIM2+F
+Best-fit model: TIM2+F chosen according to BIC
+
+All model information printed to ./iqtree_output/cov19_tree.model.gz
+CPU time for ModelFinder: 110.750 seconds (0h:1m:50s)
+Wall-clock time for ModelFinder: 49.611 seconds (0h:0m:49s)
+Generating 2000 samples for ultrafast bootstrap (seed: 670884)...
+
+NOTE: 3 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -6526.389
+Optimal log-likelihood: -6526.388
+Rate parameters:  A-C: 0.22718  A-G: 0.87051  A-T: 0.22718  C-G: 1.00000  C-T: 2.74489  G-T: 1.00000
+Base frequencies:  A: 0.294  C: 0.188  G: 0.184  T: 0.334
+Parameters optimization took 1 rounds (0.007 sec)
+Computing ML distances based on estimated model parameters... 0.094 sec
+Computing BIONJ tree...
+0.036 seconds
+Log-likelihood of BIONJ tree: -6541.734
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.715 second
+Computing log-likelihood of 98 initial trees ... 0.229 seconds
+Current best score: -6524.444
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -6524.409
+Iteration 10 / LogL: -6524.417 / Time: 0h:0m:2s
+Iteration 20 / LogL: -6525.695 / Time: 0h:0m:3s
+Finish initializing candidate tree set (20)
+Current best tree score: -6524.409 / CPU time: 3.475
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -6524.484 / Time: 0h:0m:4s (0h:0m:10s left)
+Iteration 40 / LogL: -6529.033 / Time: 0h:0m:5s (0h:0m:8s left)
+Iteration 50 / LogL: -6524.474 / Time: 0h:0m:6s (0h:0m:6s left)
+Log-likelihood cutoff on original alignment: -6556.812
+Iteration 60 / LogL: -6552.286 / Time: 0h:0m:8s (0h:0m:5s left)
+Iteration 70 / LogL: -6524.454 / Time: 0h:0m:8s (0h:0m:4s left)
+Iteration 80 / LogL: -6524.483 / Time: 0h:0m:9s (0h:0m:2s left)
+Iteration 90 / LogL: -6529.048 / Time: 0h:0m:10s (0h:0m:1s left)
+Iteration 100 / LogL: -6529.075 / Time: 0h:0m:11s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -6558.237
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.996
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:0m:12s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -6524.409
+Optimal log-likelihood: -6524.409
+Rate parameters:  A-C: 0.22700  A-G: 0.87305  A-T: 0.22700  C-G: 1.00000  C-T: 2.74086  G-T: 1.00000
+Base frequencies:  A: 0.294  C: 0.188  G: 0.184  T: 0.334
+Parameters optimization took 1 rounds (0.008 sec)
+BEST SCORE FOUND : -6524.409
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.728 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file ./iqtree_output/cov19_tree.splits.nex
+Total tree length: 0.037
+
+Total number of iterations: 102
+CPU time used for tree search: 30.812 sec (0h:0m:30s)
+Wall-clock time used for tree search: 12.642 sec (0h:0m:12s)
+Total CPU time used: 33.688 sec (0h:0m:33s)
+Total wall-clock time used: 14.064 sec (0h:0m:14s)
+
+Computing bootstrap consensus tree...
+Reading input file ./iqtree_output/cov19_tree.splits.nex...
+175 taxa and 6540 splits.
+Consensus tree written to ./iqtree_output/cov19_tree.contree
+Reading input trees file ./iqtree_output/cov19_tree.contree
+Log-likelihood of consensus tree: -6525.249
+
+Analysis results written to: 
+  IQ-TREE report:                ./iqtree_output/cov19_tree.iqtree
+  Maximum-likelihood tree:       ./iqtree_output/cov19_tree.treefile
+  Likelihood distances:          ./iqtree_output/cov19_tree.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ./iqtree_output/cov19_tree.splits.nex
+  Consensus tree:                ./iqtree_output/cov19_tree.contree
+  Screen log file:               ./iqtree_output/cov19_tree.log
+
+Date and Time: Fri Oct  3 00:28:00 2025

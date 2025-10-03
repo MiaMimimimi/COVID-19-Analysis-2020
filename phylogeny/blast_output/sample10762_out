@@ -1,0 +1,8 @@
+# BLASTN 2.12.0+
+# Query: MT609571.1:21509-25330
+# Database: ./blastdb/sample10762
+# Fields: query acc.ver, subject acc.ver, % identity, alignment length, mismatches, gap opens, q. start, q. end, s. start, s. end, evalue, bit score
+# 2 hits found
+MT609571.1:21509-25330	sample10762	100.000	2810	0	0	1013	3822	22485	25294	0.0	5190
+MT609571.1:21509-25330	sample10762	99.879	827	1	0	1	827	21473	22299	0.0	1522
+# BLAST processed 1 queries

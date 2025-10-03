@@ -1,0 +1,6 @@
+new("snmfClass", directory = "K68/run1/", snmfClass.file = "covid19edit_r1.68.snmfClass", 
+    K = 68L, run = 1L, CPU = 1L, seed = 1854165688L, alpha = 10, 
+    percentage = 0.05, I = 0L, iterations = 200L, entropy = TRUE, 
+    tolerance = 1e-05, crossEntropy = 0.00836858531904606, ploidy = 2L, 
+    Q.input.file = "", Q.output.file = "covid19edit_r1.68.Q", 
+    G.output.file = "covid19edit_r1.68.G")

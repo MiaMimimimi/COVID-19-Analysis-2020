@@ -1,0 +1,232 @@
+---
+title: "Covid-19 SNP analysis"
+author: "Xiaomi Liu"
+output:
+  html_notebook: default
+  pdf_document: default
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#knitr::opts_knit$set(root.dir = "") #set your working directory
+```
+
+```{r, message=FALSE}
+library(dplyr)
+library(ggplot2)
+library(adegenet)
+library(LEA)
+library(dartR)
+library(gtools)
+library(tidyverse)
+library(RColorBrewer)
+```
+
+# Read in data
+```{r}
+map <- read.table("../cov19_snp/cov19.map", header = F)
+ped <- read.table("../cov19_snp/cov19.ped", header = F)
+info <- read.table("../../sample_info.txt", header = T)
+```
+
+# Modify data
+```{r}
+# rename chromosome
+map$V1 <- "genome"
+# write to output
+write.table(map,file = "../cov19_snp/covid19edit.map", quote = FALSE, sep = "\t", row.names = FALSE, col.names = FALSE)
+# assign group
+ped$V1[1] <- "reference"
+ped$V1[2:1931] <- info$state
+# set V1 as factor
+ped$V1 <- as.factor(ped$V1)
+levels(ped$V1)
+# reorder levels in Column 1
+ped$V1 <- factor(ped$V1, levels = c("reference", unique(info$state) ))
+ped <-ped[order(ped$V1),]
+# write to output
+write.table(ped,file = "../cov19_snp/covid19edit.ped", quote = FALSE, sep = "\t", row.names = FALSE, col.names = FALSE)
+# generate geno file
+ped2geno("../cov19_snp/covid19edit.ped", output.file = "../cov19_snp/covid19edit.geno")
+# use PLINK to reformat our data into raw output
+system("bash -c '../plink/plink.exe --version'")
+system("bash -c '../plink/plink.exe --file ../cov19_snp/covid19edit --chr-set -1 --allow-extra-chr --recodeA --out ../cov19_snp/covid19Raw'")
+```
+
+# Read in edited SNP data
+
+```{r}
+# now import data into adegenet using the function read.PLINK()
+# Windows users will want to add the argument parallel = FALSE
+covidSNPs <- read.PLINK("../cov19_snp/covid19Raw.raw", parallel = F)
+# check to see if it worked by just executing the object name
+names(covidSNPs)
+covidSNPs$ploidy <- as.integer(rep(1, 1931))
+# save
+#save.image(file = "./SNP_analysis.rdata")
+```
+
+# Sanity check
+```{r}
+# use nInd() to check the number of individuals
+nInd(covidSNPs)
+# use nLoc() to check the number of SNPs (loci)
+nLoc(covidSNPs)
+# pop() returns a factor indicating the population of each individual
+# use table() to produce a table of the output of pop()
+table(pop(covidSNPs))
+# remove groups with only 1 individual
+covidSNPs <- subset(covidSNPs, covidSNPs$pop != "reference" & covidSNPs$pop != "FL")
+table(pop(covidSNPs))
+```
+
+# DAPC
+
+## DAPC analysis with state as group
+```{r, cache=TRUE}
+#change genlight object to a matrix
+covidSNPsMat <- as.matrix(covidSNPs)
+# replace any missing genotypes with the mean
+covidSNPsImpute <- na.replace(covidSNPsMat, 0, na.rm = TRUE)
+#use pop() to get group membership information for all individuals
+group <- pop(covidSNPs)
+#now use xvalDapc() with the group membership info from above, and
+#a maximum of 100 PCs and 100 repetitions
+xval<-xvalDapc(covidSNPsImpute, grp = group, n.pca.max=100, n.rep=100, parallel = "multicore", ncpus = 8)
+#look at the items two to six in the output
+xval[2:6]
+covidDAPC <- xval[7]$DAPC
+#plot
+par(mfrow = c(2,2))
+scatter(covidDAPC, xax = 1, yax = 2) #use discriminant functions 1 for the x-axis & 2 for the y-axis
+scatter(covidDAPC, xax = 1, yax = 3) #use discriminant functions 1 for the x-axis & 3 for the y-axis
+compoplot(covidDAPC)
+```
+## Save plot
+
+```{r}
+pdf("./plot/DAPC.pdf", width = 8, height = 5)
+par(mfrow = c(2,2))
+scatter(covidDAPC, xax = 1, yax = 2)
+scatter(covidDAPC, xax = 1, yax = 3)
+dev.off() 
+
+pdf("./plot/DAPC_composition.pdf", width = 10, height = 4)
+compoplot(covidDAPC)
+dev.off()
+```
+## Clustering with no prior group
+
+```{r, cache = TRUE}
+#run find.clusters() on the raw data
+#use max.n.clust = 100
+cluster <- find.clusters(covidSNPs, max.n.clust = 300, n.pca = 200)
+#Choose the number of clusters (>=2): 100
+```
+
+No optimal K found, skip DAPC without prior group
+
+```{r}
+# save
+#save.image(file = "./SNP_analysis.rdata")
+```
+
+# Admixture modeling
+```{r, results = "hide", cache=TRUE}
+# run snmf 
+aa_res <- snmf('../cov19_snp/covid19edit.geno', K = 1:100, entropy = TRUE, CPU = 6, project = "new")
+```
+
+```{r}
+#save.image(file = "./SNP_analysis.rdata")
+```
+
+```{r}
+# plot cross-entroypy criterion for each K
+ces_sum <-data.frame()
+ce_sum <- summary(aa_res)$crossEntropy %>%
+  as.data.frame()
+colnames(ce_sum) <- 1:100
+ce_sum <- t(ce_sum) %>%
+  as.data.frame()
+ce_sum$K <- 1:100
+ggplot(ce_sum) +
+  geom_point(aes(x = K, y = mean)) +
+  geom_path(aes(x = K, y = mean)) +
+  scale_x_continuous(limits=c(0,100), breaks=seq(0,100, by = 5)) +
+  labs(x = "K", y = "cross-entropy criterion")+
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 0.95))
+ggsave(filename = "./plot/cross_entroypy.pdf", width = 8, height = 3, units = "in")
+```
+
+```{r}
+# choose k =5
+# Pick the K where cross-entropy stops dropping sharply
+cross.entropy(aa_res,5)
+q_k5 <- Q(aa_res, 5, 1) %>% as.data.frame()
+# assign group
+sample_size <- info %>% group_by(state) %>% summarise("size" = n())
+sample_size <- arrange(sample_size, desc(size))
+q_k5$state <- ped$V1
+# set state as factor
+q_k5$state <- as.factor(q_k5$state)
+levels(q_k5$state)
+# reorder based on state
+q_k5$state <- factor(q_k5$state, levels = c("reference", as.character(sample_size$state)))
+q_k5 <-q_k5[order(q_k5$state),]
+# remove last column
+q_k5$state <- NULL
+# store x break info
+sample_size <- rbind(c("WUHAN", 1), sample_size)
+sample_size$size <- as.numeric(sample_size$size)
+sample_size$xbreak <- NA
+for(i in 1:nrow(sample_size)){
+  sample_size$xbreak[i] <- sum(sample_size$size[1:i])
+}
+
+
+#plot
+n <- 5
+qual_col_pals = brewer.pal.info
+col_vector = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
+colors <- sample(col_vector, n)
+
+gap <- (0.845-0.04)/33
+par(mar = c(2, 2, 2, 2)) 
+barplot(t(q_k5), border = NA, space = 0, col = colors, 
+        ylab = "Ancestry proportions", xlab = "Individuals", 
+        main = "Ancestry matrix for K = 5 groups", xaxt = 'n')
+# add boxes around each sampling site
+abline(v = c(0, sample_size$xbreak), lwd = 2)
+segments(0, 0, 1931, 0, lwd = 3)
+segments(0, 1, 1931, 1, lwd = 3)
+for (i in 2:35){
+  mtext(as.character(sample_size$state[i]), 1, adj = 0.04 + (i-2)*gap, cex = 0.5)
+}
+mtext("MS", 1, adj = 0.87, cex = 0.5)
+```
+```{r}
+pdf("./plot/Admixture.pdf", width = 18, height = 5)
+gap <- (0.845-0.04)/33
+par(mar = c(2, 2, 2, 2)) 
+barplot(t(q_k5), border = NA, space = 0, col = colors, 
+        ylab = "Ancestry proportions", xlab = "Individuals", 
+        main = "Ancestry matrix for K = 5 groups", xaxt = 'n')
+abline(v = c(0, sample_size$xbreak), lwd = 2)
+segments(0, 0, 1931, 0, lwd = 3)
+segments(0, 1, 1931, 1, lwd = 3)
+for (i in 2:35){
+  mtext(as.character(sample_size$state[i]), 1, adj = 0.04 + (i-2)*gap, cex = 0.5)
+}
+mtext("MS", 1, adj = 0.87, cex = 0.5)
+dev.off() 
+```
+
+```{r}
+#save.image(file = "./SNP_analysis.rdata")
+```
+
+
